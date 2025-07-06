@@ -1,0 +1,42 @@
+Algorithm Sentence
+
+Var
+  P: string;
+  length, word, vowel: integer;
+  inWord: boolean;
+
+Begin
+  length := 0;
+  word := 0;
+  vowel := 0;
+  inWord := false;
+
+  write("Enter your sentence (ending with a point):");
+
+  Repeat
+    read(P);
+    length := length + 1;
+
+    // nbr of vowels 
+    if P = 'a' or P = 'e' or P = 'i' or P = 'o' or P = 'u' or P = 'y'
+       or P = 'A' or P = 'E' or P = 'I' or P = 'O' or P = 'U' or P = 'Y' then
+       vowel := vowel + 1;
+    end if
+
+    // nbr of words
+    if ch <> ' ' and ch <> '.' then
+      if inWord = false then
+        word := word + 1;
+        inWord := true;
+      end if
+    else
+      inWord := false;
+    end if
+
+  Until P = '.';
+
+  write("Length of the sentence: ", length);
+  write("Number of words: ", word);
+  write("Number of vowels: ", vowel);
+
+End
