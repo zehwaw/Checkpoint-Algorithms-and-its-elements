@@ -24,7 +24,7 @@ Begin
     end if
 
     // nbr of words
-    if ch <> ' ' and ch <> '.' then
+    if P <> ' ' and P <> '.' then
       if inWord = false then
         word := word + 1;
         inWord := true;
