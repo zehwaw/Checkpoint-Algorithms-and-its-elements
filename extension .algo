@@ -1,4 +1,4 @@
-Algorithm Sentence
+Algorithm Sentence ;
 
 Var
   P: string;
